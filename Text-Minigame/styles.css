@@ -1,0 +1,146 @@
+#Minigame-Body {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    font-weight: lighter;
+    color:aliceblue;
+    background-color: black; 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.minigame-div {
+    display: grid;
+    place-items: center;
+    align-items: center;
+    grid-template-rows: 300px 250px 20px;
+    height: 100%;
+}
+
+.narrative-wrapper {
+    display: grid;
+    place-items: center;
+    grid-template-rows: 150px 50px;
+}
+
+#option-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(2, 40px);
+    grid-gap: 20px;
+
+}
+
+.btn {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    font-weight: lighter;
+    color:aliceblue;
+    background-color: black;
+    border: 2px solid white;
+    transition: 0.1s;
+}
+
+.btn:hover {
+    background-color: rgb(50, 50, 50);
+  }
+
+
+.inventory {
+    display: grid;
+    grid-template-rows: 50px 50px 50px 50px;
+    justify-items: center;
+    align-items: center;
+
+    
+}
+
+.crafted-inventory {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: center;
+    
+    
+}
+
+.inventory-wrapper {
+    display: grid;
+    grid-template-columns: 150px 100px;
+    
+   
+}
+
+.resource-inventory {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+
+    justify-content: center;
+}
+
+.money-inventory {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: center;
+}
+
+.inventory-counter.increase {
+    animation: increase 400ms ease-in-out;
+    color: green;
+}
+
+.inventory-counter.decrease {
+    animation: decrease 400ms ease-in-out;
+    color: red;
+}
+
+@keyframes increase {
+    5% {
+        transform: translateY(5%);
+
+    }
+    10% {
+        transform: translateY(-5%);
+    }
+    30% {
+        transform: translateY(-15%);
+    }
+
+    50% {
+        transform: translateY(-30%);
+    }
+
+    70% {
+        transform: translateY(-15%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes decrease {
+    5% {
+        transform: translateY(-5%);
+
+    }
+    10% {
+        transform: translateY(5%);
+    }
+    30% {
+        transform: translateY(15%);
+    }
+
+    50% {
+        transform: translateY(30%);
+    }
+
+    70% {
+        transform: translateY(15%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forgery Minigame</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">   
+</head>
+<body id="Minigame-Body">
+    <div class="minigame-div">
+        <div class="narrative-wrapper">
+            <div id="narrative">Would you like to build or sell an item today?</div>
+            <div class="button-wrapper">
+                <div id="option-buttons">
+            </div>
+        </div>
+        </div>
+ 
+        <div class="inventory">Inventory
+            <div class="crafted-inventory">
+                <div class="inventory-wrapper" id="sword-wrapper">
+                    <div id="sword-inventory">Swords: </div><div id="sword-inventory-amount" class="inventory-counter"></div>
+                </div>
+                <div class="inventory-wrapper" id="shield-wrapper">
+                    <div id="shield-inventory">Shields: </div><div id="shield-inventory-amount" class="inventory-counter"></div>
+                </div>
+                <div class="inventory-wrapper" id="armour-wrapper">
+                    <div id="armour-inventory">Armour: </div><div id="armour-inventory-amount" class="inventory-counter"></div>
+                </div>   
+            </div>
+            <div class="resource-inventory">
+                <div class="inventory-wrapper">
+                    <div id="iron-inventory">Iron: </div><div id="iron-inventory-amount" class="inventory-counter"></div>
+                </div>
+                <div class="inventory-wrapper">
+                    <div id="wood-inventory">Wood: </div><div id="wood-inventory-amount" class="inventory-counter"></div>
+                </div>
+                <div class="inventory-wrapper">
+                    <div id="leather-inventory">Leather: </div><div id="leather-inventory-amount" class="inventory-counter"></div>
+                </div>
+            </div>
+            <div class="money-inventory">
+                <div class="inventory-wrapper">
+                    <div id="money">Money: </div><div id="money-amount" class="inventory-counter"></div>
+                </div>
+            </div>
+        </div>
+        <div id="text-log">Text Log</div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
